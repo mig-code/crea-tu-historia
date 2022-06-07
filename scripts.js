@@ -31,19 +31,19 @@ btnRender.addEventListener("click",renderImages)
 window.onload=renderImages()
 
 
+
 function renderLoading(){
     return boxContent.innerHTML= `
     <section id="main-content">
-    <div id="box-content">
-        <div id="box-text">
-            <p>CARGANDO</p>
+        <div id="box-content">
+            <div id="box-text">
+                <p>CARGANDO</p>
+            </div>
+        
+            <div id="box-image">
+                <img id="load-animation" src=https://static.arasaac.org/pictograms/16091/16091_500.png>
+            </div>
         </div>
-    
-        <div id="box-image">
-            <img id="load-animation" src=https://static.arasaac.org/pictograms/16091/16091_500.png>
-        </div>
-    
-    </div>
     </section>`
 }
 
