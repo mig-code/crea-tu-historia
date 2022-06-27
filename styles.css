@@ -81,6 +81,7 @@ button[disabled]:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 #box-content {
@@ -140,6 +141,7 @@ button[disabled]:hover {
   font-size: 1.2rem;
   margin-top: 1.5rem;
   text-align: center;
+  margin: 0 auto;
   color: rgb(79, 75, 75);
 }
 
