@@ -26,11 +26,6 @@ function renderImages() {
     .catch((error) => console.error("Error:", error));
 }
 
-btnRender.addEventListener("click",renderImages)
-
-window.onload=renderImages()
-
-
 function renderLoading(){
     return boxContent.innerHTML= `
     <section id="main-content">
