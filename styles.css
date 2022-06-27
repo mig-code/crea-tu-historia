@@ -1,27 +1,36 @@
-* {
-  box-sizing: border-box;
+*{
+    margin: 0 auto;
+  
 }
 
-h1,
-p {
-  margin: 0 auto;
+body{
+    max-width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 138);
 }
 
-body {
-  max-width: 80%;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(255, 255, 138);
-  margin: 0 auto;
+nav{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid black;
 }
 nav>h1{
     font-size: 1.3rem;
     margin-right: 0.5rem;
 }
 
-nav > h1 {
-  font-size: 1.3rem;
-  margin-right: 0.5rem;
-  margin-left: 0;
+nav>button{
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(63, 159, 223);
+    border-radius: 20px;
 }
 nav>button:hover{
     background-color: rgb(87, 74, 226);
@@ -29,10 +38,6 @@ nav>button:hover{
 
 }
 
-nav > button:hover {
-  background-color: rgb(87, 74, 226);
-  cursor: pointer;
-}
 
 #main-content{
     display: flex;
@@ -49,20 +54,11 @@ nav > button:hover {
    
 }
 
-#box-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
+#box-text{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
 
-#box-text {
-  margin-top: 40px;
-  font-size: 2rem;
-  font-weight: bolder;
-  text-align: center;
-  margin: 0 auto 0.5em auto;
 }
 #box-image{
     margin: 0.5rem;
@@ -71,55 +67,38 @@ nav > button:hover {
     max-width: 300px;
 }
 
-#box-image > img {
-  max-width: 100%;
+#box-image>img{
+    max-width: 100%;
 }
 
-#load-animation {
-  animation: grow 4s linear infinite;
+#load-animation{
+    animation: grow 4s linear infinite;
+   
 }
-
 @keyframes grow {
-  0% {
-    transform: scale(0.75);
-  }
-
-  50% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(0.75);
-  }
+    0% { transform: scale(0.75); }
+    50% { transform: scale(0.9);}
+    100% { transform: scale(0.75); }
 }
 
-#arasaac {
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-  text-align: center;
-  color: rgb(79, 75, 75);
+
+#arasac{
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: rgb(79, 75, 75);
 }
 
-footer {
-  font-size: 0.8rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+footer{
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
-  text-align: center;
-  color: rgb(79, 75, 75);
+    text-align: center;
+    color: rgb(79, 75, 75);
 }
 
 @media (min-width: 980px) {
-  nav > h1 {
-    font-size: 2rem;
-  }
-
-  nav > button {
-    width: 80%;
-    max-width: 600px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-  }
 
     nav>h1{
         font-size: 2rem; 

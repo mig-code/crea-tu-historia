@@ -1,29 +1,29 @@
-const boxContent = document.getElementById("main-content");
-const btnRender = document.getElementById("btn-render");
-let rand;
+const boxContent =document.getElementById("main-content")
+const btnRender = document.getElementById("btn-render")
+let rand
 
-function renderImages() {
-  renderLoading();
-  btnRender.disabled = true;
 
-  fetch("https://api.arasaac.org/api/pictograms/all/es")
-    .then((res) => res.json())
-    .then((data) => {
-      boxContent.innerHTML = "";
-      let maxRandom = data.length;
+function renderImages(){
+    
+    renderLoading()
 
-      getRandomNumber(maxRandom);
-      AddBox(data[rand].keywords[0].keyword, data[rand]._id);
+    fetch("https://api.arasaac.org/api/pictograms/all/es")
+    .then(res=> res.json())
+    .then(data=>{
+        boxContent.innerHTML= ""
+        let maxRandom =data.length
+        
+        getRandomNumber(maxRandom)
+        AddBox(data[rand].keywords[0].keyword, data[rand]._id)
 
-      getRandomNumber(maxRandom);
-      AddBox(data[rand].keywords[0].keyword, data[rand]._id);
+        getRandomNumber(maxRandom)
+        AddBox(data[rand].keywords[0].keyword, data[rand]._id)
 
-      getRandomNumber(maxRandom);
-      AddBox(data[rand].keywords[0].keyword, data[rand]._id);
-
-      btnRender.disabled = false;
+        getRandomNumber(maxRandom)
+        AddBox(data[rand].keywords[0].keyword, data[rand]._id)
+        
     })
-    .catch((error) => console.error("Error:", error));
+    .catch(error => console.error('Error:', error))
 }
 
 btnRender.addEventListener("click",renderImages)
@@ -47,12 +47,14 @@ function renderLoading(){
     </section>`
 }
 
-function getRandomNumber(maxNum) {
-  return (rand = Math.floor(Math.random() * maxNum));
+function getRandomNumber(maxNum){
+    return rand = Math.floor(Math.random()*maxNum) 
+
 }
 
-function AddBox(title, imgId) {
-  boxContent.innerHTML += `
+function AddBox(title, imgId){
+
+    boxContent.innerHTML +=`
         <div id="box-content">
             <div id="box-text">
                 <p>${title.toUpperCase()}</p>
@@ -62,9 +64,5 @@ function AddBox(title, imgId) {
                 <img src=https://static.arasaac.org/pictograms/${imgId}/${imgId}_500.png>
             </div>
         
-        </div>`;
+        </div>`
 }
-
-btnRender.addEventListener("click", renderImages);
-
-window.onload = renderImages();
