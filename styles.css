@@ -63,19 +63,6 @@ button[disabled]:hover {
   color: #666666;
 }
 
-#main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#box-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
 
 #main-content {
   display: flex;
@@ -89,22 +76,15 @@ button[disabled]:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
+ 
 }
 
 #box-text {
-  margin-top: 40px;
   font-size: 2rem;
   font-weight: bolder;
   text-align: center;
   margin: 0 auto 0.5em auto;
-}
-
-#box-image {
-  margin: 0.5rem;
-  border: solid 3px rgb(79, 75, 75);
-  border-radius: 6px;
-  max-width: 250px;
 }
 
 #box-image {
@@ -149,7 +129,6 @@ footer {
   font-size: 0.8rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-
   text-align: center;
   color: rgb(79, 75, 75);
 }
@@ -179,12 +158,17 @@ footer {
   #main-content {
     display: flex;
     flex-direction: row;
+
+
   }
   #box-content {
     margin: 1.5rem;
+    max-width: 450px;
   }
-
   #box-image {
     max-width: 500px;
   }
-}
+  
+  }
+
+ 
