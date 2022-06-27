@@ -14,10 +14,6 @@ body {
   margin: 0 auto;
 }
 
-nav > h1 {
-  font-size: 1.3rem;
-}
-
 nav {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -32,11 +28,6 @@ nav > h1 {
   font-size: 1.3rem;
   margin-right: 0.5rem;
   margin-left: 0;
-}
-
-nav > button:hover {
-  background-color: rgb(87, 74, 226);
-  cursor: pointer;
 }
 
 nav > button {
@@ -134,17 +125,7 @@ footer {
 }
 
 @media (min-width: 980px) {
-  nav > h1 {
-    font-size: 2rem;
-  }
-
-  nav > button {
-    width: 80%;
-    max-width: 600px;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-  }
-
+  
   nav > h1 {
     font-size: 2rem;
   }
@@ -158,7 +139,6 @@ footer {
   #main-content {
     display: flex;
     flex-direction: row;
-
 
   }
   #box-content {
