@@ -26,7 +26,6 @@ function renderImages() {
     .catch((error) => console.error("Error:", error));
 }
 
-<<<<<<< Updated upstream
 btnRender.addEventListener("click",renderImages)
 
 window.onload=renderImages()
@@ -34,16 +33,11 @@ window.onload=renderImages()
 
 function renderLoading(){
     return boxContent.innerHTML= `
-=======
-function renderLoading() {
-  return (boxContent.innerHTML = `
->>>>>>> Stashed changes
     <section id="main-content">
     <div id="box-content">
         <div id="box-text">
             <p>CARGANDO</p>
         </div>
-<<<<<<< Updated upstream
     
         <div id="box-image">
             <img id="load-animation" src=https://static.arasaac.org/pictograms/16091/16091_500.png>
@@ -51,9 +45,6 @@ function renderLoading() {
     
     </div>
     </section>`
-=======
-    </section>`);
->>>>>>> Stashed changes
 }
 
 function getRandomNumber(maxNum) {

@@ -13,20 +13,8 @@ body {
   background-color: rgb(255, 255, 138);
   margin: 0 auto;
 }
-<<<<<<< Updated upstream
 nav>h1{
     font-size: 1.3rem;
-=======
-
-nav {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid black;
->>>>>>> Stashed changes
 }
 
 nav > h1 {
@@ -34,22 +22,9 @@ nav > h1 {
   margin-right: 0.5rem;
   margin-left: 0;
 }
-<<<<<<< Updated upstream
 nav>button:hover{
     background-color: rgb(87, 74, 226);
     cursor: pointer;
-=======
-
-nav > button {
-  width: 70%;
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: white;
-  background-color: rgb(63, 159, 223);
-  border-radius: 20px;
-  margin-left: auto;
->>>>>>> Stashed changes
 }
 
 nav > button:hover {
@@ -57,7 +32,6 @@ nav > button:hover {
   cursor: pointer;
 }
 
-<<<<<<< Updated upstream
 #main-content{
     display: flex;
     flex-direction: column;
@@ -72,20 +46,6 @@ nav > button:hover {
     justify-content:space-between;
     margin-top: 1rem;
     
-=======
-button:disabled,
-button[disabled],
-button[disabled]:hover {
-  cursor: auto;
-  background-color: #cccccc;
-  color: #666666;
-}
-
-#main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
->>>>>>> Stashed changes
 }
 
 #box-content {
@@ -103,21 +63,11 @@ button[disabled]:hover {
   text-align: center;
   margin: 0 auto 0.5em auto;
 }
-<<<<<<< Updated upstream
 #box-image{
     margin: 0.5rem;
     border: solid 3px rgb(79, 75, 75);
     border-radius: 6px;
     max-width: 250px;
-=======
-
-#box-image {
-  margin: 0.5rem;
-  border: solid 3px rgb(79, 75, 75);
-  border-radius: 6px;
-  max-width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
->>>>>>> Stashed changes
 }
 
 #box-image > img {
@@ -170,7 +120,6 @@ footer {
     font-size: 1.5rem;
   }
 
-<<<<<<< Updated upstream
     nav>h1{
         font-size: 2rem;
     }
@@ -198,20 +147,3 @@ footer {
     
   
 }
-=======
-  #main-content {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-  }
-
-  #box-content {
-    margin: 1.5rem;
-    min-width: 30%;
-  }
-
-  #box-image {
-    max-width: 500px;
-  }
-}
->>>>>>> Stashed changes
