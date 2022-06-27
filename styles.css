@@ -1,133 +1,188 @@
-*{
-    margin: 0 auto;
-  
+* {
+  box-sizing: border-box;
 }
 
-body{
-    max-width: 80%;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    background-color: rgb(255, 255, 138);
+h1,
+p {
+  margin: 0 auto;
 }
 
-nav{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid black;
-}
-nav>h1{
-    font-size: 1.3rem;
-    margin-right: 0.5rem;
+body {
+  max-width: 80%;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 138);
+  margin: 0 auto;
 }
 
-nav>button{
-    width: 70%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: white;
-    background-color: rgb(63, 159, 223);
-    border-radius: 20px;
-}
-nav>button:hover{
-    background-color: rgb(87, 74, 226);
-    cursor: pointer;
-
+nav > h1 {
+  font-size: 1.3rem;
 }
 
-
-#main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+nav {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid black;
 }
 
-#box-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
-    margin-top: 1rem;
-   
+nav > h1 {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  margin-left: 0;
 }
 
-#box-text{
-    font-size: 2rem;
-    font-weight: bolder;
-    text-align: center;
-
-}
-#box-image{
-    margin: 0.5rem;
-    border: solid 3px rgb(79, 75, 75);
-    border-radius: 6px;
-    max-width: 300px;
+nav > button:hover {
+  background-color: rgb(87, 74, 226);
+  cursor: pointer;
 }
 
-#box-image>img{
-    max-width: 100%;
+nav > button {
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(63, 159, 223);
+  border-radius: 20px;
+  margin-left: auto;
 }
 
-#load-animation{
-    animation: grow 4s linear infinite;
-   
+nav > button:hover {
+  background-color: rgb(87, 74, 226);
+  cursor: pointer;
 }
+
+button:disabled,
+button[disabled],
+button[disabled]:hover {
+  cursor: auto;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#box-text {
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0 auto 0.5em auto;
+}
+
+#box-image {
+  margin: 0.5rem;
+  border: solid 3px rgb(79, 75, 75);
+  border-radius: 6px;
+  max-width: 250px;
+}
+
+#box-image {
+  margin: 0.5rem;
+  border: solid 3px rgb(79, 75, 75);
+  border-radius: 6px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#box-image > img {
+  max-width: 100%;
+}
+
+#load-animation {
+  animation: grow 4s linear infinite;
+}
+
 @keyframes grow {
-    0% { transform: scale(0.75); }
-    50% { transform: scale(0.9);}
-    100% { transform: scale(0.75); }
+  0% {
+    transform: scale(0.75);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(0.75);
+  }
 }
 
-
-#arasac{
-    font-size: 1.3rem;
-    margin-top: 1.5rem;
-    text-align: center;
-    color: rgb(79, 75, 75);
+#arasaac {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: rgb(79, 75, 75);
 }
 
-footer{
-    font-size: 0.8rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+footer {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
-    text-align: center;
-    color: rgb(79, 75, 75);
+  text-align: center;
+  color: rgb(79, 75, 75);
 }
 
 @media (min-width: 980px) {
+  nav > h1 {
+    font-size: 2rem;
+  }
 
-    nav>h1{
-        font-size: 2rem; 
-    }
-    
-    nav>button{
-        width: 80%;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-    }
-    
-    #main-content {
-        display:flex;
-        flex-direction: row;
-        margin: 0 auto;
+  nav > button {
+    width: 80%;
+    max-width: 600px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
 
-    }
-    #box-content{
-        margin: 1.5rem;
-        min-width: 30%;
-        
-    }
+  nav > h1 {
+    font-size: 2rem;
+  }
 
-    #box-image{
-        max-width: 500px;
-        
-        
-    }
-   
-    
-  
+  nav > button {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  #main-content {
+    display: flex;
+    flex-direction: row;
+  }
+  #box-content {
+    margin: 1.5rem;
+  }
+
+  #box-image {
+    max-width: 500px;
+  }
 }
